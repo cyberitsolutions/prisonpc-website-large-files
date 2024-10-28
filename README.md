@@ -11,6 +11,13 @@ The files in `videos/` have been created like so:
     yt-dlp --write-subs --write-auto-subs "https://www.youtube.com/watch?v=8VOYS1jJ8a8"
     ```
 
+> [!NOTE]
+> That the sub(titles) mentioned above downloads the subs and embeds them
+> in the mkv, but these don't get embedded in the mp4 or webm files by
+> `ffmpeg`. [Mozilla
+> says](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API#examples)
+> you can use the vtt file, but I've not tried this.
+
 2. Remove the full video name, leaving only the YouTube ID:
 
     ```bash
